@@ -2,7 +2,7 @@
 <div class="row mx-1 px-5 pb-3 w-80">
   <div class="col mx-auto">
     <!-- Todo Item 2 -->
-    <div class="row px-3 align-items-center todo-item rounded">
+    <div class="row px-3 align-items-center todo-item rounded" *ngFor="let task of tasks">
       <div class="col-auto m-1 p-0 d-flex align-items-center">
         <h2 class="m-0 p-0">
           <fa-icon
@@ -26,13 +26,13 @@
           type="text"
           class="form-control form-control-lg border-0 edit-todo-input bg-transparent rounded px-3"
           readonly
-          value="Renew car insurance"
-          title="Renew car insurance"
+          value="{{task.text}}"
+          title="{{task.text}}"
         />
         <input
           type="text"
           class="form-control form-control-lg border-0 edit-todo-input rounded px-3 d-none"
-          value="Renew car insurance"
+          value="{{task.text}}"
         />
       </div>
       <div class="col-auto m-1 p-0 px-3">
@@ -48,7 +48,7 @@
               title=""
               data-original-title="Due on date"
             ></fa-icon>
-            <h6 class="text my-2 pr-2">28th Jun 2020</h6>
+            <h6 class="text my-2 pr-2">{{task.dueDate}}</h6>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
               title=""
               data-original-title="Created date"
             ></fa-icon>
-            <label class="date-label my-2 text-black-50">28th Jun 2020</label>
+            <label class="date-label my-2 text-black-50">{{task.createdAt}}</label>
           </div>
         </div>
       </div>
