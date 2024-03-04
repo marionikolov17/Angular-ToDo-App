@@ -7,13 +7,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CreateTodoComponent } from './create-todo/create-todo.component';
 import { TodoOptionsComponent } from './todo-options/todo-options.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoItemComponent } from './todo-list/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateTodoComponent,
     TodoOptionsComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
