@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { ToDo } from './models/todo';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  private tasks: any[] = [
+  private tasks: ToDo[] = [
     {
       id: 1,
       text: "Some task 1",

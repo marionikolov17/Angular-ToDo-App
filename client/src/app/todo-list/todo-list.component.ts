@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faCheckSquare, faHourglass, faInfoCircle, faPencilAlt, faSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { ApiService } from '../api.service';
+import { ToDo } from '../models/todo';
 
 @Component({
   selector: 'app-todo-list',
@@ -15,7 +16,7 @@ export class TodoListComponent implements OnInit {
   faTrash = faTrash;
   faInfoCircle = faInfoCircle;
   faHourglass = faHourglass
-  tasks: [] = []
+  tasks: ToDo[] = []
 
   constructor(private apiService: ApiService) {}
 
