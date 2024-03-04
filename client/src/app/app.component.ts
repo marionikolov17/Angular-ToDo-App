@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCalendar, faCalendarTimes, faSortAmountUp, faSortAmountDown, faCheck } from "@fortawesome/free-solid-svg-icons"
+import { faSortAmountUp, faSortAmountDown, faCheck } from "@fortawesome/free-solid-svg-icons"
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,6 @@ import { faCalendar, faCalendarTimes, faSortAmountUp, faSortAmountDown, faCheck 
 })
 export class AppComponent {
   /* Icons */
-  faCalendar=faCalendar;
-  faCalendarTimes=faCalendarTimes;
   faSortAmountUp=faSortAmountUp;
   faSortAmountDown=faSortAmountDown;
   faCheck=faCheck
