@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faSortAmountUp, faSortAmountDown, faCheck } from "@fortawesome/free-solid-svg-icons"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,5 @@ import { faSortAmountUp, faSortAmountDown, faCheck } from "@fortawesome/free-sol
 })
 export class AppComponent {
   /* Icons */
-  faSortAmountUp=faSortAmountUp;
-  faSortAmountDown=faSortAmountDown;
   faCheck=faCheck
 }

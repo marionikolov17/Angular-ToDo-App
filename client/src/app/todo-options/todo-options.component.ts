@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faSortAmountDown, faSortAmountUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-todo-options',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-options.component.css']
 })
 export class TodoOptionsComponent {
-
+  faSortAmountUp=faSortAmountUp;
+  faSortAmountDown=faSortAmountDown;
 }
